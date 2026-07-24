@@ -31,7 +31,7 @@ def index():
     Card.query.order_by(Card.id).all()
 
     return render_template('index.html',
-                           #cards = cards
+                           cards=Card.query.order_by(Card.id).all()
 
                            )
 
