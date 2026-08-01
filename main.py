@@ -57,7 +57,7 @@ def login():
                 session['user_email'] = user.email
                 return redirect('/index')
         else:
-            error = 'Correo electrónico o contraseña incorrectos'
+            error = 'Incorrect email or password. Please try again.'
             return render_template('login.html', error=error)
 
      
